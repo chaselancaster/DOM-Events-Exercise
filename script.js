@@ -12,6 +12,11 @@ function createListElement() {
   li.appendChild(document.createTextNode(input.value));
   ul.appendChild(li);
   input.value = "";
+
+  let button = document.createElement("button");
+  button.appendChild(document.createTextNode("Delete"));
+  li.appendChild(button);
+  button.onclick = removeParent;
 }
 
 function addListAfterClick() {
@@ -26,10 +31,10 @@ function addListAfterKeypress(event) {
   }
 }
 
-function toggleLiClass() {
-  console.log("clicking li");
-  li.classList.toggle("done");
-}
+// function toggleLiClass() {
+//   console.log("clicking li");
+//   li.classList.toggle("done");
+// }
 
 button.addEventListener("click", addListAfterClick);
 
