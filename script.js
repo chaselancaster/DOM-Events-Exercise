@@ -31,6 +31,10 @@ function addListAfterKeypress(event) {
   }
 }
 
+func removeParent(e) {
+	e.target.parentNode.remove()
+}
+
 // function toggleLiClass() {
 //   console.log("clicking li");
 //   li.classList.toggle("done");
