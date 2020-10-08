@@ -35,11 +35,6 @@ func removeParent(e) {
 	e.target.parentNode.remove()
 }
 
-// function toggleLiClass() {
-//   console.log("clicking li");
-//   li.classList.toggle("done");
-// }
-
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
