@@ -1,7 +1,7 @@
 let button = document.getElementById("enter");
 let input = document.getElementById("userinput");
 let ul = document.querySelector("ul");
-let li = document.querySelectorAll("li");
+let li = document.getElementsByTagName("li");
 
 function inputLength() {
   return input.value.length;
@@ -34,8 +34,6 @@ function toggleLiClass() {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
-li.addEventListener("click", toggleLiClass);
 
 // 1. If you click on the list item, it toggles the .done  class on and off.
 
