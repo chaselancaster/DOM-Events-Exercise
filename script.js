@@ -35,6 +35,15 @@ func removeParent(e) {
 	e.target.parentNode.remove()
 }
 
+ul.onclick = function(e) {
+	let target = e.target;
+	target.classList.toggle("done");
+}
+
+function listLength() {
+	return li.length;
+}
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
