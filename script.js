@@ -1,14 +1,14 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
-var li = document.querySelector("li");
+let button = document.getElementById("enter");
+let input = document.getElementById("userinput");
+let ul = document.querySelector("ul");
+let li = document.querySelectorAll("li");
 
 function inputLength() {
   return input.value.length;
 }
 
 function createListElement() {
-  var li = document.createElement("li");
+  let li = document.createElement("li");
   li.appendChild(document.createTextNode(input.value));
   ul.appendChild(li);
   input.value = "";
